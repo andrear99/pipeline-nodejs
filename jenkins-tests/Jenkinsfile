@@ -13,6 +13,9 @@ pipeline {
       steps {
         sh 'cd jenkins-tests && npm i'
       }
+      steps {
+        echo "dependencias  instaladas"
+      }
     }
     stage('Run tests') {
       steps {
